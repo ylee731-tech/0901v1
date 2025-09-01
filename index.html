@@ -173,9 +173,11 @@
             text-transform: uppercase;
             letter-spacing: 0.8px;
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-            align-self: center;
-            margin-top: 8px;
             min-height: 48px; /* 優化：確保最小觸控高度 */
+            
+            /* --- 變更：調整樣式以適應新位置 --- */
+            width: 100%; /* 按鈕寬度改為100%，填滿容器 */
+            margin-bottom: 10px; /* 增加與下方控制項的間距 */
         }
 
         .control-button:hover {
@@ -205,6 +207,9 @@
         </div>
 
         <div class="controls">
+            <!-- --- 變更：將按鈕移至此處 --- -->
+            <button id="control-button" class="control-button">開始</button>
+
             <div class="control-group">
                 <label for="hue" class="control-label">色相 (Hue)</label>
                 <div class="slider-container">
@@ -226,7 +231,7 @@
                 </div>
             </div>
 
-            <button id="control-button" class="control-button">開始</button>
+            <!-- --- 變更：原本的按鈕位置已移除 --- -->
         </div>
     </div>
 
@@ -500,4 +505,4 @@
         };
     </script>
 </body>
-</html>```
+</html>
